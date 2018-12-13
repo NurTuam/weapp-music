@@ -1,0 +1,26 @@
+<template name="stations_Template">
+   <swiper-item>
+            <scroll-view scroll-y="true" class="scoll-h" >  
+                    <view class='station'>
+                    <view class='station_header'>
+                    <view class='station_title'>今日优选</view>
+                    <view class='change'><image src='../../images/index/change.png'></image><text>换一换</text></view>
+                    </view>
+                    <view class='station_content'>
+                    <view class='station_list'>
+                    <image src='http://p2.music.126.net/yO-uAHcCw6IS9XipKehfjg==/109951163593491117.jpg?param=200y200'></image>
+                    <view class='station_text'><text class='station_blod'>认识杜航的陌生人</text><text class='program'>节目: 25</text><text class='produce'>人帅声撩的小哥哥弹唱给你听</text></view>
+                    </view>
+                    <view class='station_list'>
+                    <image src='http://p2.music.126.net/DxnkgBAMoX-SN3ZZkpoGPw==/1369991488358789.jpg?param=200y200'></image>
+                    <view class='station_text'><text class='station_blod'>摇滚客海盗电台</text><text class='program'>节目: 112</text><text class='produce'>一档绝对正经的摇滚乐节目</text></view>
+                    </view>
+                    <view class='station_list'>
+                    <image src='http://p2.music.126.net/atWhE17n-j_4noD5iPZGew==/18531168976264743.jpg?param=200y200'></image>
+                    <view class='station_text'><text class='station_blod'>愿我们在彼此的岁月里熠熠生辉（卢思浩书籍）</text><text class='program'>节目: 70</text><text class='produce'>一些给你力量的小故事</text></view>
+                    </view>
+                    </view>
+                    </view>
+            </scroll-view>
+        </swiper-item>
+</template>

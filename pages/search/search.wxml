@@ -1,0 +1,41 @@
+<!-- 搜索栏 -->
+<view class="search-bar">
+
+            <view class="search-bar__form">
+                <view class="search-bar__box">
+                    <icon class="icon-search_in-box" type="search" size="14"></icon>
+                    <input type="text" class="search-bar__input" placeholder="搜索"
+                           value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+                    <view class="icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+                        <icon type="clear" size="14"></icon>
+                    </view>
+                </view>
+                <!--focus时-->
+                <label class="search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+                    <icon class="icon-search" type="search" size="14"></icon>
+                    <view class="search-bar__text">搜索</view>
+                </label>
+            </view>
+            <!--取消按钮-->
+            <view class="search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+        </view>
+        <view class="searchbar-result" style="overflow-y: scroll;">
+          <view class="cells" wx:if="{{inputVal.length > 0}}" style="overflow-y: scroll;" >
+          <block wx:for="{{searchReault}}" wx:key="item" style="overflow-y: scroll;">
+            <navigator url="../play/play" class="cell" hover-class="weui-cell_active"
+            data-id="{{item.id}}" data-name="{{item.name}}" data-songUrl="{{item.mp3Url}}" data-picUrl="{{item.picUrl}}" 
+            data-singer="{{item.singer}}"
+             open-type="switchTab" bindtap="tonow">
+                  <view class="weui-cell__bd">
+                      <view class="song-name">{{item.name}}
+                        <text class="song-singer">{{item.singer}}</text>
+                      </view>
+                  </view>
+              </navigator>
+              
+          
+          
+          </block>
+              
+          </view>
+        </view>

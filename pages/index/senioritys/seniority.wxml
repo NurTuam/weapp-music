@@ -1,0 +1,38 @@
+<!-- 排行榜 -->
+     <template name="senioritys_Template">
+        <swiper-item>
+            <scroll-view scroll-y="true" class="scoll-h" > 
+                    <view class='seniority'>
+                    <view class='seniority_header'>
+                    <text class='seniority_title'>官方榜</text>
+                    </view>
+                    <view class='seniority_content'>
+                       <view class='seniority_list'>
+                           <view class='main_left'><image src='http://p1.music.126.net/DrRIg6CrgDfVLEph9SNh7w==/18696095720518497.jpg?param=150y150'></image><text class='upgrape'>每天更新</text></view>
+                           <view class='main_right'>
+                                <text class='first'>1.买个包包 (Prod. MEGA-P & JO$H) - 布瑞吉Bridge/K ELEVEN/Gosh Music</text>
+                                <text class='second'>2.恰好 - A-Lin</text>
+                                <text class='third'>3.独白色 - 张伊美Lyla</text>
+                           </view>
+                       </view>
+                       <view class='seniority_list'>
+                           <view class='main_left'><image src='http://p2.music.126.net/N2HO5xfYEqyQ8q6oxCw8IQ==/18713687906568048.jpg?param=150y150'></image><text class='upgrape'>每天更新</text></view>
+                           <view class='main_right'>
+                                <text class='first'>1.贝贝 - 李荣浩</text>
+                                <text class='second'>2.年轻有为 - 李荣浩</text>
+                                <text class='third'>3.耳朵 - 李荣浩</text>
+                           </view>
+                       </view>
+                       <view class='seniority_list'>
+                           <view class='main_left'><image src='http://p2.music.126.net/sBzD11nforcuh1jdLSgX7g==/18740076185638788.jpg?param=150y150'></image><text class='upgrape'>每周四更新</text></view>
+                           <view class='main_right'>
+                                <text class='first'>1.想淋雨就别走 - Fine乐团</text>
+                                <text class='second'>2.对不起 - Panta.Q/周深</text>
+                                <text class='third'>3.道理的道理 - 沈以诚</text>
+                           </view>
+                       </view>
+                    </view>
+                    </view>
+            </scroll-view>
+        </swiper-item>
+       </template>

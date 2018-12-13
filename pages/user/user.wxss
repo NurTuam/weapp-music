@@ -1,0 +1,16 @@
+.avabar{
+  width: 300rpx;
+  height: 300rpx;
+  margin-top: 180rpx;
+  display: block;
+  border-radius: 150rpx;
+  margin-left: 216rpx;
+}
+.hello{
+  display: block;
+  margin-top: 118rpx;
+  font-size: 48rpx;
+  font-weight: bold;
+  color: #BB2C08;
+  margin-left: 260rpx;                                        
+}

@@ -1,0 +1,5 @@
+<view class="container">
+<image class="avabar" src="http://p1.music.126.net/4B_awFt7IT8N108gS_rN6g==/109951163426206591.jpg?param=140y140"></image>
+<text class="hello" >{{nickName}}</text>
+</view>
+

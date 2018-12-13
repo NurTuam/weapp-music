@@ -1,0 +1,45 @@
+<import src="commands/command.wxml"/>
+<import src="songs/song.wxml" />
+<import src="stations/station.wxml" />
+<import src="senioritys/seniority.wxml" />
+<view class='container'>
+<scroll-view bindscroll="scroll" scroll-y="false" style='height:100%;'>
+<!-- 头部 -->
+<view class='top'>
+<view class='top_position' style="opacity:{{scrollTop / 100 > 0.9 ? 0.9 : scrollTop / 100}}"></view>
+<view class='top_left'>
+<image bindtap='stateTap' src='../../images/index/cai.png'></image>
+</view>
+<view class='top_right'>
+<image bindtap='searchTap' src='../../images/index/search.png'></image>
+</view>
+</view>
+<!-- 轮播 -->
+<view class='slider_container'>
+<swiper current="{{swiperCurrent}}" indicator-dots="{{false}}" autoplay="{{true}}" circular="{{true}}" interval='3000' bindtap='swiperTap' bindchange='sliderChange'>
+<swiper-item wx:for="{{slider}}" wx:key="{{index}}">
+<image src="{{item.picUrl}}" data-link="{{item.linkUrl}}"></image>
+</swiper-item>
+</swiper>
+<view class="dots">
+    <block wx:for="{{slider}}" wx:key="{{index}}">
+      <view class="dot {{index == swiperCurrent ? ' active' : ''}}"></view>
+    </block>
+  </view>
+  </view>
+  <!-- 滑动tab -->
+  <scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
+        <view class="tab-item {{currentTab==0?'active':''}}"  data-current="0" bindtap="swichNav">热门推荐</view>
+        <view class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="swichNav">歌单</view>
+        <view class="tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="swichNav">主播电台</view>
+        <view class="tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="swichNav">排行榜</view>
+    </scroll-view>
+    <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab"
+     style="height:{{winHeight}}rpx">
+        <template is="commands_Template" data="{{item:item}}" />
+        <template is="songs_Template" data="{{item:item}}" />
+        <template is="stations_Template" data="{{item:item}}" />
+        <template is="senioritys_Template" data="{{item:item}}" />
+    </swiper>
+    </scroll-view>
+</view>

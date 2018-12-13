@@ -1,0 +1,86 @@
+/* 歌单 */
+.all_song .song_header{
+  position: relative;
+  padding-top:24rpx;
+  padding-left:10rpx;
+  height: 64rpx;
+}
+.all_song .song_header .header_left{
+  width: 200rpx;
+  height: 60rpx;
+  float: left;
+  line-height: 60rpx;
+  text-align: center;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 40rpx;
+}
+.all_song .song_header .header_left .song_Ltext{
+    margin-right: 20rpx;
+}
+.all_song .song_header .header_right{
+  width: 300rpx;
+  height: 22rpx;
+  font-size: 15px;
+  float: right;
+  color:  #696969;
+}
+.all_song .song_header .header_right text{
+  margin-right: 12px;
+}
+.all_song .song_lists{
+  display:flex;
+  /* justify-content:space-between; */
+  flex-wrap:wrap;
+  padding-left: 6rpx;
+}
+.song_lists .song-list{
+  width:calc((100% - 8px)/2);
+  margin-top:12px;
+  position: relative;
+}
+.song_lists .song-list .image{
+  width:100%;
+  height:130px;
+  margin:0 auto;
+  position: relative;
+}
+.song_lists .song-list .song_listen{
+  position: absolute;
+  right: 15px;
+  top: 0;
+  font-size: 8px;
+  color: #ccc;
+}
+.song_lists .song-list .song_peo{
+  position: absolute;
+  bottom: 44px;
+  left: 12px;
+  font-size: 10px;
+  color: #ccc;
+}
+.song_lists .song-list .headset{
+  position: absolute;
+  right: 39px;
+  top: 2px;
+  display: block;
+  width: 8px;
+  height: 8px;
+}
+.song_lists .song-list .peo{
+  position: absolute;
+  bottom: 44px;
+  left: 2px;
+  display: block;
+  width: 10px;
+  height: 10px;
+}
+.song_lists .song-list .lists_text{
+  font-size:14px;
+  width:100%;
+  height:40px;
+  display:block;
+  white-space:normal;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}

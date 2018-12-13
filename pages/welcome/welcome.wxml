@@ -1,0 +1,9 @@
+<view class="container">
+<image class="avabar" src="{{avatarUrl}}"></image>
+<text class="hello" >Hello,{{nickName}}</text>
+<view class="journey" bindtap="onTap">
+<text class="journey_t">登录你的网易云音乐</text>
+</view>
+</view>
+
+

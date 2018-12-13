@@ -1,0 +1,106 @@
+@import "commands/command.wxss";
+@import "songs/song.wxss";
+@import "stations/station.wxss";
+@import "senioritys/seniority.wxss";
+page{
+  height: 100%;
+}
+.top{
+  width: 100%;
+  height: 70rpx;
+  display: table;
+  table-layout: fixed;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.top_position{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #BB2C08;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+}
+.top_left{
+  width:70rpx;
+  height:70rpx;
+  position: absolute;
+  left: 12rpx;
+  top: 14rpx;
+}
+.top_left image{
+  display: block;
+  width:50rpx;
+  height:50rpx;
+}
+.top_right{
+  width:70rpx;
+  height:70rpx;
+  position: absolute;
+  right: 4rpx;
+  top: 14rpx;
+}
+.top_right image{
+  display: block;
+  width:50rpx;
+  height:50rpx;
+}
+.slider_container{
+  position: relative;
+}
+swiper image{
+  width: 100%;
+  height: 100%;
+}
+.slider_container .dots{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20rpx;
+  display: flex;
+  justify-content: center;
+}
+.slider_container .dots .dot{
+  margin: 0 8rpx;
+  width: 16rpx;
+  height: 16rpx;
+  background: #fff;
+  border-radius: 10rpx;
+}
+.slider_container .dots .dot.active{
+  background: #BB2C08;
+}
+/* 滑动Tab */
+.tab-h{
+    height: 120rpx;
+    width: 100%; 
+    box-sizing: border-box;
+    overflow: hidden;
+    line-height: 120rpx;
+    background: #F7F7F7;
+    font-size: 15px; 
+    white-space: nowrap;
+}
+.tab-item{
+  margin:0 35rpx;
+  display: inline-block;
+}
+.tab-item.active{
+  color: #BB2C08;
+  position: relative;
+}
+.tab-item.active:after{ 
+  content: "";
+  display: block;
+  height: 8rpx;
+  width: 100%;
+  background: #BB2C08;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 16rpx;
+}

@@ -1,0 +1,41 @@
+<template name="commands_Template">
+<swiper-item>
+            <scroll-view scroll-y="true" class="scoll-h">
+                   <!-- 推荐歌单 -->
+                    <view class="tuijian-lists">
+                            <view class="header">
+                            <view class='line'></view>
+                                 <text>推荐歌单</text><text>></text>
+                            </view>
+                            <view class="lists-content">
+                                   
+                                    <navigator url=""  class="weui-grid_active">
+                                       <view class="image image1" style="background: url(http://p1.music.126.net/qiIMbaMZZ76ZdCKVdJJ6aA==/109951163017999677.jpg?param=140y140) no-repeat"></view>
+                                        <view class='u_icon'></view>
+                                        <view class="lists_text">论贝斯的如何优雅地抢镜</view>
+                                    </navigator>
+                                    <navigator url=""  class="weui-grid_active">
+                                     <view class="image image2" style="background: url(http://p2.music.126.net/DQRMlEip5UglfbmxiFqRmA==/109951163450149276.jpg?param=140y140) no-repeat"></view>
+                                        <view class="lists_text">让我 为你重新踏上停泊已久的船甲</view>
+                                    </navigator>
+                                    <navigator url=""  class="weui-grid_active">
+                                       <view class="image image3" style="background: url(http://p2.music.126.net/1Il955txCn7-TaXRDiY6ug==/109951163450944695.jpg?param=140y140) no-repeat"></view>
+                                        <view class="lists_text">双搭绝唱 · 阵阵凉意熄灭爱焰</view>
+                                    </navigator>
+                                    <navigator url=""  class="weui-grid_active">
+                                       <view class="image image1" style="background: url(http://p2.music.126.net/FyAzFtHcUMZUhh65r0as8w==/109951162956253324.jpg?param=140y140) no-repeat"></view>
+                                        <view class="lists_text">【Celtic】跟着民谣去旅行--爱尔兰篇</view>
+                                    </navigator>
+                                    <navigator url=""  class="weui-grid_active">
+                                     <view class="image image2" style="background: url(http://p1.music.126.net/oU__cxcC7u-y-S6VxYJfNg==/109951163615617716.jpg?param=140y140) no-repeat"></view>
+                                        <view class="">分开后 你过得还好吗</view>
+                                    </navigator>
+                                    <navigator url=""  class="weui-grid_active">
+                                       <view class="image image3" style="background: url(http://p1.music.126.net/SS9d80J6hCfkexH_eFPz8g==/18998461416443720.jpg?param=140y140) no-repeat"></view>
+                                        <view class="lists_text">老歌曲终究经得起时间推敲</view>
+                                    </navigator>                 
+                            </view>
+                        </view>
+            </scroll-view>
+        </swiper-item>
+        </template>

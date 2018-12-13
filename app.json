@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/state/state",
+    "pages/search/search",
+    "pages/index/index",
+    "pages/mes/me",
+    "pages/play/play",
+    "pages/logs/log",
+    "pages/index/link/link",
+    "pages/index/commands/command",
+    "pages/index/songs/song",
+    "pages/user/user",
+    "pages/index/stations/station",
+    "pages/index/senioritys/seniority"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "CloudMusic",
+    "backgroundColor": "#fbfcfd",
+    "navigationBarBackgroundColor": "#BB2C08",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "backgroundColor": "#2A2C2E",
+    "color": "#a7a7a7",
+    "selectedColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "发现音乐",
+        "iconPath": "images/icon/discover.png",
+        "selectedIconPath": "images/icon/discover_s.png"
+      },
+      {
+        "pagePath": "pages/mes/me",
+        "text": "我的音乐",
+        "iconPath": "images/icon/music.png",
+        "selectedIconPath": "images/icon/music_s.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "images/icon/search_s.png",
+        "selectedIconPath": "images/icon/search.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "账号",
+        "iconPath": "images/icon/my.png",
+        "selectedIconPath": "images/icon/my_s.png"
+      }
+    ],
+    "position": "bottom"
+  }
+}

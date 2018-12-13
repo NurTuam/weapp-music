@@ -1,0 +1,57 @@
+/* 推荐歌单 */
+.tuijian-lists .header{
+  position:relative;
+  padding-top: 20rpx;
+}
+.tuijian-lists .header .line{
+  width: 4px;
+  height: 20px;
+  position:absolute;
+  left: 0;
+  top: 32rpx;
+  background: #BB2C08;
+}
+.tuijian-lists .header text:first-child{
+  padding-left:15px;
+}
+.tuijian-lists .header text{
+  font-size:20px;
+  font-weight:400;
+  padding-left: 10px;
+}
+.tuijian-lists .header text:last-child{
+  padding-left:10px;
+}
+.lists-content{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+}
+.lists-content navigator {
+  width:calc((100% - 8px) / 3);
+  margin-top:12px;
+}
+.lists-content .image {
+  width:100%;
+  height:130px;
+  margin:0 auto;
+}
+.lists-content .u_icon{
+  background: url(https://s2.music.126.net/style/web2/img/icon2.png?bf0c394996c8a844a5ff6e29968c648f) no-repeat 0 9999px;
+  position: absolute;
+  left: 0;
+  top: 45px;
+  width: 40px;
+  height: 40px;
+  background-position: -135px -220px;
+}
+.lists-content navigator view:last-child {
+  font-size:14px;
+  width:100%;
+  height:40px;
+  /* margin-top:5px; */
+  display:block;
+  white-space:normal;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}

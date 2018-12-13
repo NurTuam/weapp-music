@@ -1,0 +1,67 @@
+<template name="songs_Template">
+<swiper-item>
+            <scroll-view scroll-y="true" class="scoll-h" >
+                 <!-- 歌单 -->
+                   <view class='all_song'>
+                       <view class='song_header'>
+                       <view class='header_left'>
+                              <text class='song_Ltext'>全部歌单</text><text>></text>
+                       </view>
+                       <view class='header_right'>
+                       <text>华语</text><text>说唱</text><text>摇滚</text>
+                       </view>
+                       </view>
+                       <view class='song_lists'>
+                       <navigator url=""  class="song-list">
+                                       <view class="image image1" style="background: url(http://p2.music.126.net/S2DJ_MfdZKsksXnoul_vEA==/109951163558311984.jpg?param=140y140) no-repeat"></view>
+                                       <image class='headset' src='../../images/index/headset.png'></image>
+                                       <view class='song_listen'>21万</view>
+                                       <image class='peo' src='../../images/index/peo.png'></image>
+                                       <view class='song_peo'>云村治愈所</view>
+                                        <view class="lists_text">生活没有那么奇妙 但有你才会变得美好</view>
+                                    </navigator>
+                                    <navigator url=""  class="song-list">
+                                     <view class="image image2" style="background: url(http://p2.music.126.net/n54AYYOG5smPLzlcC1JIDg==/109951163618875329.jpg?param=140y140) no-repeat"></view>
+                                     <image class='headset' src='../../images/index/headset.png'></image>
+                                     <view class='song_listen'>10万</view>
+                                     <image class='peo' src='../../images/index/peo.png'></image>
+                                       <view class='song_peo'>佳期不负</view>
+                                        <view class="lists_text">不可错过的优质日系R&B</view>
+                                    </navigator>
+                                    <navigator url=""  class="song-list">
+                                       <view class="image image3" style="background: url(http://p2.music.126.net/OY0HDgGKXttdAcxqRcRT0Q==/109951163606422105.jpg?param=140y140) no-repeat"></view>
+                                       <image class='headset' src='../../images/index/headset.png'></image>
+                                       <view class='song_listen'>48084</view>
+                                       <image class='peo' src='../../images/index/peo.png'></image>
+                                       <view class='song_peo'>JZhustleEvyday</view>
+                                        <view class="lists_text">摇滚【蒙太奇】拼凑的白日梦</view>
+                                    </navigator>
+                                    <navigator url=""  class="song-list">
+                                       <view class="image image1" style="background: url(http://p2.music.126.net/uEW9cIaHEOguNjRpJ2LjeA==/109951163430738862.jpg?param=140y140) no-repeat"></view>
+                                        <image class='headset' src='../../images/index/headset.png'></image>
+                                        <view class='song_listen'>12926</view>
+                                        <image  class='peo' src='../../images/index/peo.png'></image>
+                                       <view class='song_peo'>上帝硬盘里抄曲子</view>
+                                        <view class="lists_text">俄罗斯古典乐-斯拉夫民族的浪漫与悲壮</view>
+                                    </navigator>
+                                    <navigator url=""  class="song-list">
+                                     <view class="image image2" style="background: url(http://p2.music.126.net/EBypmQWo3yEfNlE36wNDyg==/109951163618511506.jpg?param=140y140) no-repeat"></view>
+                                      <image class='headset' src='../../images/index/headset.png'></image>
+                                     <view class='song_listen'>11309</view>
+                                     <image  class='peo' src='../../images/index/peo.png'></image>
+                                       <view class='song_peo'>soAoAyEDM</view>
+                                        <view class="lists_text">2018百大DJ排行榜</view>
+                                    </navigator>
+                                    <navigator url=""  class="song-list">
+                                       <view class="image image3" style="background: url(http://p2.music.126.net/AqO0rDQCX51clV5-SkaGfg==/109951163578009092.jpg?param=140y140) no-repeat"></view>
+                                        <image class='headset' src='../../images/index/headset.png'></image>
+                                       <view class='song_listen'>20591</view>
+                                       <image class='peo' src='../../images/index/peo.png'></image>
+                                       <view class='song_peo'>柠檬味的柠檬树</view>
+                                        <view class="lists_text">治愈率100％：抚慰在感情中受伤的心</view>
+                                    </navigator>                 
+                       </view>
+                   </view>
+            </scroll-view>
+        </swiper-item>
+</template>
